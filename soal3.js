@@ -4,10 +4,13 @@ divideAndSort = (params) => {
   } else {
     if (typeof params != "number") {
       console.log("Parameter harus bertipe number");
+    }else if (params.toString().length > 16){
+        console.log("Parameter tidak boleh lebih dari 16");
     } else {
+        
       //params = params.toString();
       params = params + "0";
-      //console.log(params)
+    //   console.log(params.length)
       var hasilBatas = "";
       var a = "";
       var hasilArray = [];
@@ -36,4 +39,4 @@ divideAndSort = (params) => {
   }
 };
 
-divideAndSort(5956560159466056);
+divideAndSort(5956560159466065);
